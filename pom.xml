@@ -22,6 +22,7 @@
 		<module>rest-server</module>
         <module>grpc-client</module>
 		<module>grpc-server</module>
+		<module>rx-client</module>
 	</modules>
 
 	<properties>
