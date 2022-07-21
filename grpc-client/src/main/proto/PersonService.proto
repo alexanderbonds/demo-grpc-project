@@ -1,0 +1,17 @@
+syntax = "proto3";
+option java_multiple_files = true;
+package com.demo.grpc.generated;
+
+message PersonRequest {
+  string firstName = 1;
+  string lastName = 2;
+  int32 age = 3;
+}
+
+message PersonResponse {
+  string toString = 1;
+}
+
+service PersonService {
+  rpc getToString(PersonRequest) returns (PersonResponse);
+}
